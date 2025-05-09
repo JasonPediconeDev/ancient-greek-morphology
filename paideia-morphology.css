@@ -379,4 +379,62 @@ html:has(.filter-panel.active){
 
 .reset-button:hover {
     background: #bb2d3b !important;
+}
+
+/* Landing Page Styles */
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content h1 {
+    color: #2c5276;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.reference-links {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reference-links h2 {
+    color: #2c5276;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.reference-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reference-links li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.reference-links li:last-child {
+    border-bottom: none;
+}
+
+.reference-links a {
+    color: #2c5276;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reference-links a:hover {
+    text-decoration: underline;
 } 
