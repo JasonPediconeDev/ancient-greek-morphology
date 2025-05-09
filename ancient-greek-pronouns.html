@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ancient Greek Pronouns</title>
+    <link href="paideia-morphology.css" rel="stylesheet">
+    <link href="child-theme.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid my-3">
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <a href="ancient-greek-verbs.html" class="morphology-link">Verbs</a>
+            <a href="ancient-greek-nouns.html" class="morphology-link">Nouns</a>
+            <a href="ancient-greek-adjectives.html" class="morphology-link">Adjectives</a>
+            <a href="ancient-greek-pronouns.html" class="morphology-link active">Pronouns</a>
+            <a href="ancient-greek-articles.html" class="morphology-link">Articles</a>
+        </nav>
+        <!-- Filter Buttons -->
+        <div class="filter-bar">
+            <div class="filter-row">
+                <button onclick="filterCategory('filter1', 'Personal')">Personal</button>
+                <button onclick="filterCategory('filter1', 'Interrogative')">Interrogative</button>
+                <button onclick="filterCategory('filter1', 'Demonstrative')">Demonstrative</button>
+            </div>
+            <div class="filter-row">
+                <button onclick="filterCategory('filter1', 'Αὐτός')">Αὐτός</button>
+            </div>
+            <div class="filter-row">
+                <button class="reset-button" onclick="resetFilters()">RESET</button>
+            </div>
+        </div>
+        <!-- Cards Container -->
+        <div class="cards-container">
+            <div class="card" data-filter1="Personal" id="ἐγώ-singular">
+                <h4>ἐγώ</h4>
+                <h5>Personal Pronouns – Singular</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>1st Person</th>
+                            <th>2nd Person</th>
+                        </tr>
+                        <tr><td>Nom.</td><td>ἐγώ</td><td>σύ</td></tr>
+                        <tr><td>Gen.</td><td>ἐμοῦ / μου</td><td>σοῦ / σου</td></tr>
+                        <tr><td>Dat.</td><td>ἐμῷ / μοι</td><td>σοί / σοι</td></tr>
+                        <tr><td>Acc.</td><td>ἐμέ / με</td><td>σέ / σε</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="Personal" id="ἡμεῖς">
+                <h4>ἡμεῖς</h4>
+                <h5>Personal Pronouns – Plural</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>1st Person</th>
+                            <th>2nd Person</th>
+                        </tr>
+                        <tr><td>Nom.</td><td>ἡμεῖς</td><td>ὑμεῖς</td></tr>
+                        <tr><td>Gen.</td><td>ἡμῶν</td><td>ὑμῶν</td></tr>
+                        <tr><td>Dat.</td><td>ἡμῖν</td><td>ὑμῖν</td></tr>
+                        <tr><td>Acc.</td><td>ἡμᾶς</td><td>ὑμᾶς</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="Interrogative" id="τίς">
+                <h4>τίς τί</h4>
+                <h5>Interrogative Pronoun</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine/Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr><td>Nom. Sing.</td><td>τίς</td><td>τί</td></tr>
+                        <tr><td>Gen. Sing.</td><td>τίνος</td><td>τίνος</td></tr>
+                        <tr><td>Dat. Sing.</td><td>τίνι</td><td>τίνι</td></tr>
+                        <tr><td>Acc. Sing.</td><td>τίνα</td><td>= nom.</td></tr>
+                        <tr><td>Nom. Pl.</td><td>τίνες</td><td>τίνα</td></tr>
+                        <tr><td>Gen. Pl.</td><td>τίνων</td><td>τίνων</td></tr>
+                        <tr><td>Dat. Pl.</td><td>τίσι(ν)</td><td>τίσι(ν)</td></tr>
+                        <tr><td>Acc. Pl.</td><td>τίνας</td><td>= nom.</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="Demonstrative" id="ὅδε">
+                <h4>ὅδε ἥδε τόδε</h4>
+                <h5>Demonstrative</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr><td>Nom. Sing.</td><td>ὅδε</td><td>ἥδε</td><td>τόδε</td></tr>
+                        <tr><td>Gen. Sing.</td><td>τοῦδε</td><td>τῆσδε</td><td>τοῦδε</td></tr>
+                        <tr><td>Dat. Sing.</td><td>τῷδε</td><td>τῇδε</td><td>τῷδε</td></tr>
+                        <tr><td>Acc. Sing.</td><td>τόνδε</td><td>τήνδε</td><td>= nom.</td></tr>
+                        <tr><td>Nom. Pl.</td><td>οἵδε</td><td>αἵδε</td><td>τάδε</td></tr>
+                        <tr><td>Gen. Pl.</td><td>τῶνδε</td><td>τῶνδε</td><td>τῶνδε</td></tr>
+                        <tr><td>Dat. Pl.</td><td>τοῖσδε</td><td>ταῖσδε</td><td>τοῖσδε</td></tr>
+                        <tr><td>Acc. Pl.</td><td>τούσδε</td><td>τάσδε</td><td>= nom.</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="Demonstrative" id="οὗτος">
+                <h4>οὗτος αὔτη τοῦτο</h4>
+                <h5>Demonstrative</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr><td>Nom. Sing.</td><td>οὗτος</td><td>αὕτη</td><td>τοῦτο</td></tr>
+                        <tr><td>Gen. Sing.</td><td>τούτου</td><td>ταύτης</td><td>τούτου</td></tr>
+                        <tr><td>Dat. Sing.</td><td>τούτῳ</td><td>ταύτῃ</td><td>τούτῳ</td></tr>
+                        <tr><td>Acc. Sing.</td><td>τοῦτον</td><td>ταύτην</td><td>= nom.</td></tr>
+                        <tr><td>Nom. Pl.</td><td>οὗτοι</td><td>αὗται</td><td>ταῦτα</td></tr>
+                        <tr><td>Gen. Pl.</td><td>τούτων</td><td>τούτων</td><td>τούτων</td></tr>
+                        <tr><td>Dat. Pl.</td><td>τούτοις</td><td>ταύταις</td><td>τούτοις</td></tr>
+                        <tr><td>Acc. Pl.</td><td>τούτους</td><td>ταύτας</td><td>= nom.</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="Demonstrative" id="ἐκεῖνος">
+                <h4>ἐκεῖνος ἐκείνη ἐκεῖνο</h4>
+                <h5>Demonstrative</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr><td>Nom. Sing.</td><td>ἐκεῖνος</td><td>ἐκείνη</td><td>ἐκεῖνο</td></tr>
+                        <tr><td>Gen. Sing.</td><td>ἐκείνου</td><td>ἐκείνης</td><td>ἐκείνου</td></tr>
+                        <tr><td>Dat. Sing.</td><td>ἐκείνῳ</td><td>ἐκείνῃ</td><td>ἐκείνῳ</td></tr>
+                        <tr><td>Acc. Sing.</td><td>ἐκεῖνον</td><td>ἐκείνην</td><td>= nom.</td></tr>
+                        <tr><td>Nom. Pl.</td><td>ἐκεῖνοι</td><td>ἐκεῖναι</td><td>ἐκεῖνα</td></tr>
+                        <tr><td>Gen. Pl.</td><td>ἐκείνων</td><td>ἐκείνων</td><td>ἐκείνων</td></tr>
+                        <tr><td>Dat. Pl.</td><td>ἐκείνοις</td><td>ἐκείναις</td><td>ἐκείνοις</td></tr>
+                        <tr><td>Acc. Pl.</td><td>ἐκείνους</td><td>ἐκείνας</td><td>= nom.</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="Αὐτός" id="αὐτός">
+                <h4>αὐτός αὐτή αὐτό</h4>
+                <h5>Αὐτός</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr><td>Nom. Sing.</td><td>αὐτός</td><td>αὐτή</td><td>αὐτό</td></tr>
+                        <tr><td>Gen. Sing.</td><td>αὐτοῦ</td><td>αὐτῆς</td><td>αὐτοῦ</td></tr>
+                        <tr><td>Dat. Sing.</td><td>αὐτῷ</td><td>αὐτῇ</td><td>αὐτῷ</td></tr>
+                        <tr><td>Acc. Sing.</td><td>αὐτόν</td><td>αὐτήν</td><td>= nom.</td></tr>
+                        <tr><td>Nom. Pl.</td><td>αὐτοί</td><td>αὐταί</td><td>αὐτά</td></tr>
+                        <tr><td>Gen. Pl.</td><td>αὐτῶν</td><td>αὐτῶν</td><td>αὐτῶν</td></tr>
+                        <tr><td>Dat. Pl.</td><td>αὐτοῖς</td><td>αὐταῖς</td><td>αὐτοῖς</td></tr>
+                        <tr><td>Acc. Pl.</td><td>αὐτούς</td><td>αὐτάς</td><td>= nom.</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="morphology-filters.js"></script>
+</body>
+</html> 

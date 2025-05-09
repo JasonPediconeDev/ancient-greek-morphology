@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ancient Greek Articles</title>
+    <link href="paideia-morphology.css" rel="stylesheet">
+    <link href="child-theme.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid my-3">
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <a href="ancient-greek-verbs.html" class="morphology-link">Verbs</a>
+            <a href="ancient-greek-nouns.html" class="morphology-link">Nouns</a>
+            <a href="ancient-greek-adjectives.html" class="morphology-link">Adjectives</a>
+            <a href="ancient-greek-pronouns.html" class="morphology-link">Pronouns</a>
+            <a href="ancient-greek-articles.html" class="morphology-link active">Articles</a>
+        </nav>
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="filter-row">
+                <button onclick="filterCategory('filter1', 'Definite')">Definite</button>
+                <button onclick="filterCategory('filter1', 'Indefinite')">Indefinite</button>
+            </div>
+            <div class="filter-row">
+                <button class="reset-button" onclick="resetFilters()">RESET</button>
+            </div>
+        </div>
+        <!-- Cards Container -->
+        <div class="cards-container">
+            <!-- Card 1: Definite Article -->
+            <div class="card article-card" data-filter1="Definite" id="ὁ">
+                <h4>The Definite Article</h4>
+                <h5>ὁ ἡ τό</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th colspan="3">Singular</th>
+                            <th colspan="3">Plural</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>Nominative</td>
+                            <td>ὁ</td>
+                            <td>ἡ</td>
+                            <td>τό</td>
+                            <td>οἱ</td>
+                            <td>αἱ</td>
+                            <td>τά</td>
+                        </tr>
+                        <tr>
+                            <td>Genitive</td>
+                            <td>τοῦ</td>
+                            <td>τῆς</td>
+                            <td>τοῦ</td>
+                            <td>τῶν</td>
+                            <td>τῶν</td>
+                            <td>τῶν</td>
+                        </tr>
+                        <tr>
+                            <td>Dative</td>
+                            <td>τῷ</td>
+                            <td>τῇ</td>
+                            <td>τῷ</td>
+                            <td>τοῖς</td>
+                            <td>ταῖς</td>
+                            <td>τοῖς</td>
+                        </tr>
+                        <tr>
+                            <td>Accusative</td>
+                            <td>τόν</td>
+                            <td>τήν</td>
+                            <td>τό</td>
+                            <td>τούς</td>
+                            <td>τάς</td>
+                            <td>τά</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 2: Indefinite Article -->
+            <div class="card article-card" data-filter1="Indefinite" id="τις">
+                <h4>The Indefinite Article</h4>
+                <h5>τις τί</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th colspan="3">Singular</th>
+                            <th colspan="3">Plural</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>Nominative</td>
+                            <td>τις</td>
+                            <td>τις</td>
+                            <td>τί</td>
+                            <td>τινές</td>
+                            <td>τινές</td>
+                            <td>τινά</td>
+                        </tr>
+                        <tr>
+                            <td>Genitive</td>
+                            <td>τινός</td>
+                            <td>τινός</td>
+                            <td>τινός</td>
+                            <td>τινῶν</td>
+                            <td>τινῶν</td>
+                            <td>τινῶν</td>
+                        </tr>
+                        <tr>
+                            <td>Dative</td>
+                            <td>τινί</td>
+                            <td>τινί</td>
+                            <td>τινί</td>
+                            <td>τισί(ν)</td>
+                            <td>τισί(ν)</td>
+                            <td>τισί(ν)</td>
+                        </tr>
+                        <tr>
+                            <td>Accusative</td>
+                            <td>τινά</td>
+                            <td>τινά</td>
+                            <td>τί</td>
+                            <td>τινάς</td>
+                            <td>τινάς</td>
+                            <td>τινά</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="morphology-filters.js"></script>
+</body>
+</html> 

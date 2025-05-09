@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ancient Greek Verbs</title>
+    <link href="paideia-morphology.css" rel="stylesheet">
+    <link href="child-theme.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid my-3">
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <a href="ancient-greek-verbs.html" class="morphology-link active">Verbs</a>
+            <a href="ancient-greek-nouns.html" class="morphology-link">Nouns</a>
+            <a href="ancient-greek-adjectives.html" class="morphology-link">Adjectives</a>
+            <a href="ancient-greek-pronouns.html" class="morphology-link">Pronouns</a>
+            <a href="ancient-greek-articles.html" class="morphology-link">Articles</a>
+        </nav>
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="filter-row">
+                <button onclick="filterCategory('filter1', '-ω Verbs')">-ω Verbs</button>
+                <button onclick="filterCategory('filter1', '-ἐω Verbs')">-ἐω Verbs</button>
+                <button onclick="filterCategory('filter1', '-άω Verbs')">-άω Verbs</button>
+                <button onclick="filterCategory('filter1', '-όω Verbs')">-όω Verbs</button>
+                <button onclick="filterCategory('filter1', '-μι Verbs')">-μι Verbs</button>
+                <button onclick="filterCategory('filter1', 'Other')">Other</button>
+            </div>
+            <div class="filter-row">
+                <button onclick="filterCategory('filter2', 'Present Stem')">Present Stem</button>
+                <button onclick="filterCategory('filter2', 'Perfect Stems')">Perfect Stems</button>
+            </div>
+            <div class="filter-row">
+                <button onclick="filterCategory('filter3', 'Indicative')">Indicative</button>
+                <button onclick="filterCategory('filter3', 'Imperative')">Imperative</button>
+                <button onclick="filterCategory('filter3', 'Infinitive')">Infinitive</button>
+            </div>
+            <div class="filter-row">
+                <button class="reset-button" onclick="resetFilters()">RESET</button>
+            </div>
+        </div>
+        <!-- Cards Container -->
+        <div class="cards-container">
+            <!-- Card 1: παιδεύω -->
+            <div class="card" data-filter1="-ω Verbs" data-filter2="Present Stem" data-filter3="Indicative" id="παιδεύω">
+                <h4>-ω Verbs Present Indicative</h4>
+                <h5><strong>παιδεύω</strong> παιδεύσω ἐπαίδευσα πεπαίδευκα πεπαίδευμαι ἐπαιδεύθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>1st sg.</td>
+                            <td>παιδεύω</td>
+                            <td>παιδεύομαι</td>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>παιδεύεις</td>
+                            <td>παιδεύῃ / παιδεύει</td>
+                        </tr>
+                        <tr>
+                            <td>3rd sg.</td>
+                            <td>παιδεύει</td>
+                            <td>παιδεύεται</td>
+                        </tr>
+                        <tr>
+                            <td>1st pl.</td>
+                            <td>παιδεύομεν</td>
+                            <td>παιδευόμεθα</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>παιδεύετε</td>
+                            <td>παιδεύεσθε</td>
+                        </tr>
+                        <tr>
+                            <td>3rd pl.</td>
+                            <td>παιδεύουσι(ν)</td>
+                            <td>παιδεύονται</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 2: ποιέω -->
+            <div class="card" data-filter1="-ἐω Verbs" data-filter2="Present Stem" data-filter3="Indicative" id="ποιῶ">
+                <h4>-ἐω Verbs Present Indicative</h4>
+                <h5><strong>ποιέω</strong> ποιήσω ἐποιήσα πεποίηκα πεποίημαι ἐποιήθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>1st sg.</td>
+                            <td>ποιῶ</td>
+                            <td>ποιοῦμαι</td>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>ποιεῖς</td>
+                            <td>ποιῇ / ποιεῖ</td>
+                        </tr>
+                        <tr>
+                            <td>3rd sg.</td>
+                            <td>ποιεῖ</td>
+                            <td>ποιεῖται</td>
+                        </tr>
+                        <tr>
+                            <td>1st pl.</td>
+                            <td>ποιοῦμεν</td>
+                            <td>ποιούμεθα</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>παιδεύετε</td>
+                            <td>παιδεύεσθε</td>
+                        </tr>
+                        <tr>
+                            <td>3rd pl.</td>
+                            <td>ποιοῦσι(ν)</td>
+                            <td>ποιοῦνται</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 3: τιμάω -->
+            <div class="card" data-filter1="-άω Verbs" data-filter2="Present Stem" data-filter3="Indicative" id="τιμῶ">
+                <h4>-άω Verbs Present Indicative</h4>
+                <h5><strong>τιμάω</strong> τιμήσω ἐτίμησα τετίμηκα τετίμημαι ἐτιμήθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>1st sg.</td>
+                            <td>τιμῶ</td>
+                            <td>τιμῶμαι</td>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>τιμᾷς</td>
+                            <td>τιμᾷ</td>
+                        </tr>
+                        <tr>
+                            <td>3rd sg.</td>
+                            <td>τιμᾷ</td>
+                            <td>τιμᾶται</td>
+                        </tr>
+                        <tr>
+                            <td>1st pl.</td>
+                            <td>τιμῶμεν</td>
+                            <td>τιμώμεθα</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>τιμᾶτε</td>
+                            <td>τιμᾶσθε</td>
+                        </tr>
+                        <tr>
+                            <td>3rd pl.</td>
+                            <td>τιμῶσι(ν)</td>
+                            <td>τιμῶνται</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 4: πληρόω -->
+            <div class="card" data-filter1="-όω Verbs" data-filter2="Present Stem" data-filter3="Indicative" id="πληρῶ">
+                <h4>-όω Verbs Present Indicative</h4>
+                <h5><strong>πληρόω</strong> πληρώσω ἐπλήρωσα πεπλήρωκα πεπληρώμαι ἐπληρώθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>1st sg.</td>
+                            <td>πληρῶ</td>
+                            <td>πληροῦμαι</td>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>πληροῖς</td>
+                            <td>πληροῖ</td>
+                        </tr>
+                        <tr>
+                            <td>3rd sg.</td>
+                            <td>πληροῖ</td>
+                            <td>πληροῦται</td>
+                        </tr>
+                        <tr>
+                            <td>1st pl.</td>
+                            <td>πληροῦμεν</td>
+                            <td>πληρούμεθα</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>πληροῦτε</td>
+                            <td>πληροῦσθε</td>
+                        </tr>
+                        <tr>
+                            <td>3rd pl.</td>
+                            <td>πληροῦσι(ν)</td>
+                            <td>πληροῦνται</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 5: εἰμί -->
+            <div class="card" data-filter1="-μι Verbs" data-filter2="Present Stem" data-filter3="Indicative" id="εἰμί">
+                <h4>εἰμί Present Indicative</h4>
+                <h5><strong>εἰμί</strong> ἔσομαι</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                        </tr>
+                        <tr>
+                            <td>1st sg.</td>
+                            <td>εἰμί</td>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>εἶ</td>
+                        </tr>
+                        <tr>
+                            <td>3rd sg.</td>
+                            <td>ἐστί(ν)</td>
+                        </tr>
+                        <tr>
+                            <td>1st pl.</td>
+                            <td>ἐσμέν</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>ἐστέ</td>
+                        </tr>
+                        <tr>
+                            <td>3rd pl.</td>
+                            <td>εἰσί(ν)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 6: οἶδα -->
+            <div class="card" data-filter1="Other" data-filter2="Perfect Stems" data-filter3="Indicative" id="οἶδα">
+                <h4>οἶδα Perfect (used as present) Indicative</h4>
+                <h5><strong>οἶδα</strong> εἴσομαι</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                        </tr>
+                        <tr>
+                            <td>1st sg.</td>
+                            <td>οἶδα</td>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>οἶσθα</td>
+                        </tr>
+                        <tr>
+                            <td>3rd sg.</td>
+                            <td>οἶδε(ν)</td>
+                        </tr>
+                        <tr>
+                            <td>1st pl.</td>
+                            <td>ἴσμεν</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>ἴστε</td>
+                        </tr>
+                        <tr>
+                            <td>3rd pl.</td>
+                            <td>ἴσασι(ν)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 7: -ω Verbs Present Imperative -->
+            <div class="card" data-filter1="-ω Verbs" data-filter2="Present Stem" data-filter3="Imperative" id="παιδεύω-imp">
+                <h4>-ω Verbs Present Imperative</h4>
+                <h5><strong>παιδεύω</strong> παιδεύσω ἐπαίδευσα πεπαίδευκα πεπαίδευμαι ἐπαιδεύθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>παίδευε</td>
+                            <td>παιδεύου</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>παιδεύετε</td>
+                            <td>παιδεύεσθε</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 8: -ἐω Verbs Present Imperative -->
+            <div class="card" data-filter1="-ἐω Verbs" data-filter2="Present Stem" data-filter3="Imperative" id="ποιῶ-imp">
+                <h4>-ἐω Verbs Present Imperative</h4>
+                <h5><strong>ποιέω</strong> ποιήσω ἐποιήσα πεποίηκα πεποίημαι ἐποιήθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>ποίει</td>
+                            <td>ποιοῦ</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>ποιεῖτε</td>
+                            <td>ποιεῖσθε</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 9: -άω Verbs Present Imperative -->
+            <div class="card" data-filter1="-άω Verbs" data-filter2="Present Stem" data-filter3="Imperative" id="τιμῶ-imp">
+                <h4>-άω Verbs Present Imperative</h4>
+                <h5><strong>τιμάω</strong> τιμήσω ἐτίμησα τετίμηκα τετίμημαι ἐτιμήθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>τίμα</td>
+                            <td>τιμῶ</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>τιμᾶτε</td>
+                            <td>τιμᾶσθε</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 10: -όω Verbs Present Imperative -->
+            <div class="card" data-filter1="-όω Verbs" data-filter2="Present Stem" data-filter3="Imperative" id="πληρῶ-imp">
+                <h4>-όω Verbs Present Imperative</h4>
+                <h5><strong>πληρόω</strong> πληρώσω ἐπλήρωσα πεπλήρωκα πεπληρώμαι ἐπληρώθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>πλήρου</td>
+                            <td>πληροῦ</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>πληροῦτε</td>
+                            <td>πληροῦσθε</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 11: εἰμί Present Imperative -->
+            <div class="card" data-filter1="-μι Verbs" data-filter2="Present Stem" data-filter3="Imperative" id="εἰμί-imp">
+                <h4>εἰμί Present Imperative</h4>
+                <h5><strong>εἰμί</strong> ἔσομαι</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>ἴσθι</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>ἔστε</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 12: οἶδα Perfect Imperative -->
+            <div class="card" data-filter1="Other" data-filter2="Perfect Stems" data-filter3="Imperative" id="οἶδα-imp">
+                <h4>οἶδα Perfect (used as present) Imperative</h4>
+                <h5><strong>οἶδα</strong> εἴσομαι</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                        </tr>
+                        <tr>
+                            <td>2nd sg.</td>
+                            <td>ἴσθι</td>
+                        </tr>
+                        <tr>
+                            <td>2nd pl.</td>
+                            <td>ἴστε</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 13: -ω Verbs Present Infinitive -->
+            <div class="card" data-filter1="-ω Verbs" data-filter2="Present Stem" data-filter3="Infinitive" id="παιδεύω-inf">
+                <h4>-ω Verbs Present Infinitive</h4>
+                <h5><strong>παιδεύω</strong> παιδεύσω ἐπαίδευσα πεπαίδευκα πεπαίδευμαι ἐπαιδεύθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>Infinitive</td>
+                            <td>παιδεύειν</td>
+                            <td>παιδεύεσθαι</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 14: -ἐω Verbs Present Infinitive -->
+            <div class="card" data-filter1="-ἐω Verbs" data-filter2="Present Stem" data-filter3="Infinitive" id="ποιῶ-inf">
+                <h4>-ἐω Verbs Present Infinitive</h4>
+                <h5><strong>ποιέω</strong> ποιήσω ἐποιήσα πεποίηκα πεποίημαι ἐποιήθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>Infinitive</td>
+                            <td>ποιεῖν</td>
+                            <td>ποιεῖσθαι</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 15: -άω Verbs Present Infinitive -->
+            <div class="card" data-filter1="-άω Verbs" data-filter2="Present Stem" data-filter3="Infinitive" id="τιμῶ-inf">
+                <h4>-άω Verbs Present Infinitive</h4>
+                <h5><strong>τιμάω</strong> τιμήσω ἐτίμησα τετίμηκα τετίμημαι ἐτιμήθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>Infinitive</td>
+                            <td>τιμᾶν</td>
+                            <td>τιμᾶσθαι</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 16: -όω Verbs Present Infinitive -->
+            <div class="card" data-filter1="-όω Verbs" data-filter2="Present Stem" data-filter3="Infinitive" id="πληρῶ-inf">
+                <h4>-όω Verbs Present Infinitive</h4>
+                <h5><strong>πληρόω</strong> πληρώσω ἐπλήρωσα πεπλήρωκα πεπληρώμαι ἐπληρώθην</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                            <th>middle-passive</th>
+                        </tr>
+                        <tr>
+                            <td>Infinitive</td>
+                            <td>πληροῦν</td>
+                            <td>πληροῦσθαι</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 17: εἰμί Present Infinitive -->
+            <div class="card" data-filter1="-μι Verbs" data-filter2="Present Stem" data-filter3="Infinitive" id="εἰμί-inf">
+                <h4>εἰμί Present Infinitive</h4>
+                <h5><strong>εἰμί</strong> ἔσομαι</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                        </tr>
+                        <tr>
+                            <td>Infinitive</td>
+                            <td>εἶναι</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 18: οἶδα Perfect Infinitive -->
+            <div class="card" data-filter1="Other" data-filter2="Perfect Stems" data-filter3="Infinitive" id="οἶδα-inf">
+                <h4>οἶδα Perfect (used as present) Infinitive</h4>
+                <h5><strong>οἶδα</strong> εἴσομαι</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>active</th>
+                        </tr>
+                        <tr>
+                            <td>Infinitive</td>
+                            <td>εἰδέναι</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="morphology-filters.js"></script>
+</body>
+</html> 

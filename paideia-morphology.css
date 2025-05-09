@@ -1,0 +1,382 @@
+html:has(.filter-panel.active){
+    overflow: hidden;
+}
+.morphology-link {
+    color: #2c5276;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid transparent
+}
+
+.morphology-link.active {
+    border-color: #2c5276
+}
+
+.top-nav {
+    gap: 30px;
+}
+
+/* Sticky Navigation Sections */
+.parts-of-speech-nav, .verb-selection, .verb-nav, .nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.verb-nav, .nav-bar {
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.nav-bar {
+    top: 90px; /* Offset for verb-nav height */
+    margin-top: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-bar .container-fluid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+/* Button Styling for Navigation Sections */
+.parts-of-speech-nav button, .verb-selection button, .filter-group button, .reset-button-container .reset-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    min-width: 60px;
+    flex: 1 1 auto;
+    border: 2px solid transparent;
+}
+
+.parts-of-speech-nav button:hover,
+.verb-selection button:hover,
+.filter-group button:hover,
+.filter-group button.active {
+    background-color: #0056b3;
+    border: 2px solid #003d80;
+}
+
+.reset-button-container .reset-button {
+    background-color: #ff4d4d;
+    max-width: 100px;
+}
+
+.reset-button-container .reset-button:hover {
+    background-color: #cc0000;
+}
+
+/* Filter Group Layout */
+.filter-group {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.filter-group h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.2rem;
+    width: 420px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+}
+
+/* Special width for article cards */
+.article-card {
+    width: 600px;
+}
+
+.highlighted {
+    border: 4px solid #d9943a
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+    box-sizing: border-box;
+    color: rgb(28, 83, 121);
+    display: block;
+    font-family: "Open Sans", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    margin: 0 0 8px 0;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.card h5 {
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    font-family: "Open Sans", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0 0 12px 0;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Table Styling Inside Cards */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.3rem;
+    table-layout: auto;
+}
+
+.card table th, .card table td {
+    border: 1px solid #ddd;
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 0.85rem;
+    min-width: 70px;
+}
+
+.card table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.card table td {
+    background-color: #fff;
+}
+
+/* Reset Button Position */
+.reset-button-container {
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+    height: 38px;
+}
+
+.filter-icon {
+    display: none;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+.table-responsive table {
+    width: 100%; /* Ensure the table takes the full width */
+    border-collapse: collapse; /* Optional: to remove default spacing */
+}
+
+.table-responsive th, .table-responsive td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1440px) {
+    .filter-icon {
+        position: fixed;
+        left: 0;
+        top: 118px;
+        z-index: 1000;
+        color: #333;
+        padding: 0 14px;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+        display: block;
+        background-color: #fff;
+        transition: all .5s ease-in-out;
+    }
+    body:has(.nav-stickied) .filter-icon{
+        top: 102px;
+    }
+
+
+    .filter-panel {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        z-index: 999;
+        box-shadow: -10px 1px 30px #000;
+    }
+
+    .filter-panel.active {
+        left: 0;
+    }
+
+    .nav-bar {
+        top: 158px;
+        padding: 1rem 0;
+        max-height: calc(100vh - 158px);
+        overflow-y: auto;
+        flex-direction: row;
+        transition: all .5s ease-in-out;
+    }
+    body:has(.nav-stickied) .nav-bar{
+        top: 142px;
+    }
+
+    .nav-bar > .row {
+        width: 100%
+    }
+
+    .nav-bar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-group {
+        flex-direction: column;
+        align-items: unset;
+        width: 100%
+    }
+
+}
+@media (max-width: 1199px){
+    .filter-icon{
+        top: 92px;
+    }
+    body:has(.nav-stickied) .filter-icon{
+        top: 76px;
+    }
+    .nav-bar {
+        top: 132px;
+        max-height: calc(100vh - 132px);
+    }
+    body:has(.nav-stickied) .nav-bar{
+        top: 116px;
+        max-height: calc(100vh - 116px);
+    }
+
+}
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+    .scrollable-content {
+        padding-left: 43px;
+        justify-content: flex-start !important;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+.filter-bar {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.filter-row:last-child {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.filter-bar button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 100px;
+}
+
+.filter-bar button:hover {
+    background: #e9ecef;
+}
+
+.filter-bar button.active {
+    background: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.reset-button {
+    background: #dc3545 !important;
+    color: white !important;
+    border-color: #dc3545 !important;
+    min-width: 120px !important;
+}
+
+.reset-button:hover {
+    background: #bb2d3b !important;
+} 

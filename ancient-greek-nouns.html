@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ancient Greek Nouns</title>
+    <link href="paideia-morphology.css" rel="stylesheet">
+    <link href="child-theme.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid my-3">
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <a href="ancient-greek-verbs.html" class="morphology-link">Verbs</a>
+            <a href="ancient-greek-nouns.html" class="morphology-link active">Nouns</a>
+            <a href="ancient-greek-adjectives.html" class="morphology-link">Adjectives</a>
+            <a href="ancient-greek-pronouns.html" class="morphology-link">Pronouns</a>
+            <a href="ancient-greek-articles.html" class="morphology-link">Articles</a>
+        </nav>
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="filter-row">
+                <button onclick="filterCategory('filter1', 'First Declension')">First Declension</button>
+                <button onclick="filterCategory('filter1', 'Second Declension')">Second Declension</button>
+            </div>
+            <div class="filter-row">
+                <button onclick="filterCategory('filter2', 'Feminine')">Feminine</button>
+                <button onclick="filterCategory('filter2', 'Masculine')">Masculine</button>
+                <button onclick="filterCategory('filter2', 'Neuter')">Neuter</button>
+            </div>
+            <div class="filter-row">
+                <button class="reset-button" onclick="resetFilters()">RESET</button>
+            </div>
+        </div>
+        <!-- Cards Container -->
+        <div class="cards-container">
+            <!-- Card 1: ἐπιστολή -->
+            <div class="card" data-filter1="First Declension" data-filter2="Feminine" id="ἐπιστολή">
+                <h4>ἡ ἐπιστολή -ῆς</h4>
+                <h4>First Declension Feminine in -η -ης</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>ἐπιστολή</td><td>ἐπιστολαί</td></tr>
+                        <tr><td>Genitive</td><td>ἐπιστολῆς</td><td>ἐπιστολῶν</td></tr>
+                        <tr><td>Dative</td><td>ἐπιστολῇ</td><td>ἐπιστολαῖς</td></tr>
+                        <tr><td>Accusative</td><td>ἐπιστολήν</td><td>ἐπιστολάς</td></tr>
+                        <tr><td>Vocative</td><td>ἐπιστολή</td><td>ἐπιστολαί</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 2: οἰκία -->
+            <div class="card" data-filter1="First Declension" data-filter2="Feminine" id="οἰκία">
+                <h4>ἡ οἰκία -ας</h4>
+                <h4>First Declension Feminine in -α -ας (after ε, ι, ρ)</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>οἰκία</td><td>οἰκίαι</td></tr>
+                        <tr><td>Genitive</td><td>οἰκίας</td><td>οἰκιῶν</td></tr>
+                        <tr><td>Dative</td><td>οἰκίᾳ</td><td>οἰκίαις</td></tr>
+                        <tr><td>Accusative</td><td>οἰκίαν</td><td>οἰκίας</td></tr>
+                        <tr><td>Vocative</td><td>οἰκία</td><td>οἰκίαι</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 3: θάλαττα -->
+            <div class="card" data-filter1="First Declension" data-filter2="Feminine" id="θάλαττα">
+                <h4>ἡ θάλαττα -ης</h4>
+                <h4>First Declension Feminine in -α -ης</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>θάλαττα</td><td>θάλατται</td></tr>
+                        <tr><td>Genitive</td><td>θαλάττης</td><td>θαλαττῶν</td></tr>
+                        <tr><td>Dative</td><td>θαλάττῃ</td><td>θαλάτταις</td></tr>
+                        <tr><td>Accusative</td><td>θάλατταν</td><td>θαλάττας</td></tr>
+                        <tr><td>Vocative</td><td>θάλαττα</td><td>θάλατται</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 4: μαθητής -->
+            <div class="card" data-filter1="First Declension" data-filter2="Masculine" id="μαθητής">
+                <h4>ὁ μαθητής -οῦ</h4>
+                <h4>First Declension Masculine in -ης -ου</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>μαθητής</td><td>μαθηταί</td></tr>
+                        <tr><td>Genitive</td><td>μαθητοῦ</td><td>μαθητῶν</td></tr>
+                        <tr><td>Dative</td><td>μαθητῇ</td><td>μαθηταῖς</td></tr>
+                        <tr><td>Accusative</td><td>μαθητήν</td><td>μαθητάς</td></tr>
+                        <tr><td>Vocative</td><td>μαθητά</td><td>μαθηταί</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 5: νεανίας -->
+            <div class="card" data-filter1="First Declension" data-filter2="Masculine" id="νεανίας">
+                <h4>ὁ νεανίας -ου</h4>
+                <h4>First Declension Masculine -ας -ου (after ε, ι, ρ)</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>νεανίας</td><td>νεανίαι</td></tr>
+                        <tr><td>Genitive</td><td>νεανίου</td><td>νεανιῶν</td></tr>
+                        <tr><td>Dative</td><td>νεανίᾳ</td><td>νεανίαις</td></tr>
+                        <tr><td>Accusative</td><td>νεανίαν</td><td>νεανίας</td></tr>
+                        <tr><td>Vocative</td><td>νεανία</td><td>νεανίαι</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 6: αἴλουρος -->
+            <div class="card" data-filter1="Second Declension" data-filter2="Masculine" data-filter3="Feminine" id="αἴλουρος">
+                <h4>ὁ/ἡ αἴλουρος -ου</h4>
+                <h4>Second Declension Masc. & Fem. in -ος -ου</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>αἴλουρος</td><td>αἴλουροι</td></tr>
+                        <tr><td>Genitive</td><td>αἰλούρου</td><td>αἰλούρων</td></tr>
+                        <tr><td>Dative</td><td>αἰλούρῳ</td><td>αἴλουροις</td></tr>
+                        <tr><td>Accusative</td><td>αἴλουρον</td><td>αἴλουρους</td></tr>
+                        <tr><td>Vocative</td><td>αἴλουρε</td><td>αἴλουροι</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 7: βιβλίον -->
+            <div class="card" data-filter1="Second Declension" data-filter2="Neuter" id="βιβλίον">
+                <h4>τὸ βιβλίον -ου</h4>
+                <h4>Second Declension Neuter in -ον -ου</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>βιβλίον</td><td>βιβλία</td></tr>
+                        <tr><td>Genitive</td><td>βιβλίου</td><td>βιβλίων</td></tr>
+                        <tr><td>Dative</td><td>βιβλίῳ</td><td>βιβλίοις</td></tr>
+                        <tr><td>Accusative</td><td>βιβλίον</td><td>βιβλία</td></tr>
+                        <tr><td>Vocative</td><td>βιβλίον</td><td>βιβλία</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 8: πλοῦς -->
+            <div class="card" data-filter1="Second Declension" data-filter2="Masculine" id="πλοῦς">
+                <h4>πλοῦς</h4>
+                <h4>Second Declension Masculine in -ους -ου (Contracted)</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>πλοῦς</td><td>πλοῖ</td></tr>
+                        <tr><td>Genitive</td><td>πλοῦ</td><td>πλῶν</td></tr>
+                        <tr><td>Dative</td><td>πλῷ</td><td>πλοῖς</td></tr>
+                        <tr><td>Accusative</td><td>πλοῦν</td><td>πλοῦς</td></tr>
+                        <tr><td>Vocative</td><td>πλοῦ</td><td>πλοῖ</td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Card 9: ὀστοῦν -->
+            <div class="card" data-filter1="Second Declension" data-filter2="Neuter" id="ὀστοῦν">
+                <h4>τὸ ὀστοῦν -οῦ</h4>
+                <h4>Second Declension Neuter in -ουν -ου (Contracted)</h4>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>ὀστοῦν</td><td>ὀστᾶ</td></tr>
+                        <tr><td>Genitive</td><td>ὀστοῦ</td><td>ὀστῶν</td></tr>
+                        <tr><td>Dative</td><td>ὀστῷ</td><td>ὀστοῖς</td></tr>
+                        <tr><td>Accusative</td><td>ὀστοῦν</td><td>ὀστᾶ</td></tr>
+                        <tr><td>Vocative</td><td>ὀστοῦν</td><td>ὀστᾶ</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="morphology-filters.js"></script>
+</body>
+</html> 

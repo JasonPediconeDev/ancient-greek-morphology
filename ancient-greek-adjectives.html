@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ancient Greek Adjectives</title>
+    <link href="paideia-morphology.css" rel="stylesheet">
+    <link href="child-theme.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid my-3">
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <a href="ancient-greek-verbs.html" class="morphology-link">Verbs</a>
+            <a href="ancient-greek-nouns.html" class="morphology-link">Nouns</a>
+            <a href="ancient-greek-adjectives.html" class="morphology-link active">Adjectives</a>
+            <a href="ancient-greek-pronouns.html" class="morphology-link">Pronouns</a>
+            <a href="ancient-greek-articles.html" class="morphology-link">Articles</a>
+        </nav>
+        <!-- Filter Buttons -->
+        <div class="filter-bar">
+            <div class="filter-row">
+                <button onclick="filterCategory('filter1', 'First- and Second-Declension')">First- and Second-Declension</button>
+            </div>
+            <div class="filter-row">
+                <button onclick="filterCategory('filter2', 'Contracted')">Contracted</button>
+                <button onclick="filterCategory('filter2', 'Mixed Declension')">Mixed Declension</button>
+                <button onclick="filterCategory('filter2', 'of Two Endings')">of Two Endings</button>
+            </div>
+            <div class="filter-row">
+                <button class="reset-button" onclick="resetFilters()">RESET</button>
+            </div>
+        </div>
+        <!-- Cards Container -->
+        <div class="cards-container">
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="" id="καλός">
+                <h4>καλός καλή καλόν</h4>
+                <h5>Singular</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>καλός</td>
+                            <td>καλή</td>
+                            <td>καλόν</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>καλοῦ</td>
+                            <td>καλῆς</td>
+                            <td>καλοῦ</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>καλῷ</td>
+                            <td>καλῇ</td>
+                            <td>καλῷ</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>καλόν</td>
+                            <td>καλήν</td>
+                            <td>= nom.</td>
+                        </tr>
+                        <tr>
+                            <td>voc.</td>
+                            <td>καλέ</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="" id="καλός">
+                <h4>καλός καλή καλόν</h4>
+                <h5>Plural</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>καλοί</td>
+                            <td>καλαί</td>
+                            <td>καλά</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>καλῶν</td>
+                            <td>καλῶν</td>
+                            <td>καλῶν</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>καλοῖς</td>
+                            <td>καλαῖς</td>
+                            <td>καλοῖς</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>καλούς</td>
+                            <td>καλάς</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Contracted" id="χρυσοῦς">
+                <h4>χρυσοῦς χρυσῆ χρυσοῦν</h4>
+                <h5>Singular</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th></tr>
+                        <tr><td>nom.</td><td>χρυσοῦς</td><td>χρυσῆ</td><td>χρυσοῦν</td></tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>χρυσοῦ</td>
+                            <td>χρυσῆς</td>
+                            <td>χρυσοῦ</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>χρυσῷ</td>
+                            <td>χρυσῇ</td>
+                            <td>χρυσῷ</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>χρυσοῦν</td>
+                            <td>χρυσῆν</td>
+                            <td>= nom.</td>
+                        </tr>
+                        <tr>
+                            <td>voc.</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Contracted" id="χρυσοῦς">
+                <h4>χρυσοῦς χρυσῆ χρυσοῦν</h4>
+                <h5>Plural</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>= nom.</td>
+                            <td>χρυσαῖ</td>
+                            <td>χρυσᾶ</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>χρυσῶν</td>
+                            <td>χρυσῶν</td>
+                            <td>χρυσῶν</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>χρυσοῖς</td>
+                            <td>χρυσαῖς</td>
+                            <td>χρυσοῖς</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>χρυσοῦς</td>
+                            <td>χρυσᾶς</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Mixed Declension" id="ἀργυροῦς">
+                <h4>ἀργυροῦς ἀργυρᾶ ἀργυροῦν</h4>
+                <h5>Singular</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>ἀργυροῦς</td>
+                            <td>ἀργυρᾶ</td>
+                            <td>ἀργυροῦν</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>ἀργυροῦ</td>
+                            <td>ἀργυρᾶς</td>
+                            <td>ἀργυροῦ</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>ἀργυρῷ</td>
+                            <td>ἀργυρᾷ</td>
+                            <td>ἀργυρῷ</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>ἀργυροῦν</td>
+                            <td>ἀργυρᾶν</td>
+                            <td>= nom.</td>
+                        </tr>
+                        <tr>
+                            <td>voc.</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Mixed Declension" id="ἀργυροῦς">
+                <h4>ἀργυροῦς ἀργυρᾶ ἀργυροῦν</h4>
+                <h5>Plural</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>ἀργυροῖ</td>
+                            <td>ἀργυραῖ</td>
+                            <td>ἀργυρᾶ</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>ἀργυρῶν</td>
+                            <td>ἀργυρῶν</td>
+                            <td>ἀργυρῶν</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>ἀργυροῖς</td>
+                            <td>ἀργυραῖς</td>
+                            <td>ἀργυροῖς</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>ἀργυροῦς</td>
+                            <td>ἀργυρᾶς</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Mixed Declension" id="πολύς">
+                <h4>πολύς πολλή πολύ</h4>
+                <h5>Singular</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>πολύς</td>
+                            <td>πολλή</td>
+                            <td>πολύ</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>πολλοῦ</td>
+                            <td>πολλῆς</td>
+                            <td>πολλοῦ</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>πολλῷ</td>
+                            <td>πολλῇ</td>
+                            <td>πολλῷ</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>πολύν</td>
+                            <td>πολλήν</td>
+                            <td>= nom.</td>
+                        </tr>
+                        <tr>
+                            <td>voc.</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Mixed Declension" id="πολύς">
+                <h4>πολύς πολλή πολύ</h4>
+                <h5>Plural</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>πολλοί</td>
+                            <td>πολλαί</td>
+                            <td>πολλά</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>πολλῶν</td>
+                            <td>πολλῶν</td>
+                            <td>πολλῶν</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>πολλοῖς</td>
+                            <td>πολλαῖς</td>
+                            <td>πολλοῖς</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>πολλούς</td>
+                            <td>πολλάς</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Mixed Declension" id="μέγας">
+                <h4>μέγας μεγάλη μέγα</h4>
+                <h5>Singular</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>μέγας</td>
+                            <td>μεγάλη</td>
+                            <td>μέγα</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>μεγάλου</td>
+                            <td>μεγάλης</td>
+                            <td>μεγάλου</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>μεγάλῳ</td>
+                            <td>μεγάλῃ</td>
+                            <td>μεγάλῳ</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>μέγαν</td>
+                            <td>μεγάλην</td>
+                            <td>= nom.</td>
+                        </tr>
+                        <tr>
+                            <td>voc.</td>
+                            <td>μεγάλε / μέγα</td>
+                            <td>= nom.</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="Mixed Declension" id="μέγας">
+                <h4>μέγας μεγάλη μέγα</h4>
+                <h5>Plural</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr>
+                            <td>nom.</td>
+                            <td>μεγάλοι</td>
+                            <td>μεγάλαι</td>
+                            <td>μεγάλα</td>
+                        </tr>
+                        <tr>
+                            <td>gen.</td>
+                            <td>μεγάλων</td>
+                            <td>μεγάλων</td>
+                            <td>μεγάλων</td>
+                        </tr>
+                        <tr>
+                            <td>dat.</td>
+                            <td>μεγάλοις</td>
+                            <td>μεγάλαις</td>
+                            <td>μεγάλοις</td>
+                        </tr>
+                        <tr>
+                            <td>acc.</td>
+                            <td>μεγάλους</td>
+                            <td>μεγάλας</td>
+                            <td>= nom.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="of Two Endings" id="ἄδικος">
+                <h4>ἄδικος ἄδικον</h4>
+                <h5>First- and Second-Declension Adj. of Two Endings in -ος -ον</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine/Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr><td>nom. sg.</td><td>ἄδικος</td><td>ἄδικος</td></tr>
+                        <tr><td>gen. sg.</td><td>ἀδίκου</td><td>ἀδίκου</td></tr>
+                        <tr><td>dat. sg.</td><td>ἀδίκῳ</td><td>ἀδίκῳ</td></tr>
+                        <tr><td>acc. sg.</td><td>ἄδικον</td><td>= nom.</td></tr>
+                        <tr><td>voc. sg.</td><td>ἄδικε</td><td>= nom.</td></tr>
+                        <tr><td>nom./voc. pl.</td><td>ἄδικοι</td><td>ἄδικα</td></tr>
+                        <tr><td>gen. pl.</td><td>ἀδίκων</td><td>ἀδίκων</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card" data-filter1="First- and Second-Declension" data-filter2="of Two Endings" id="εὔνους">
+                <h4>εὔνους εὔνουν</h4>
+                <h5>First- and Second-Declension Adj. of Two Endings Contracted in -ους -ουν</h5>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine/Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                        <tr><td>nom. sg.</td><td>εὔνους</td><td>εὔνους</td></tr>
+                        <tr><td>gen. sg.</td><td>εὔνου</td><td>εὔνου</td></tr>
+                        <tr><td>dat. sg.</td><td>εὔνῳ</td><td>εὔνῳ</td></tr>
+                        <tr><td>acc. sg.</td><td>εὔνουν</td><td>= nom.</td></tr>
+                        <tr><td>voc. sg.</td><td>= nom.</td><td>= nom.</td></tr>
+                        <tr><td>nom./voc. pl.</td><td>εὖνοι</td><td>εὔνοα</td></tr>
+                        <tr><td>gen. pl.</td><td>εὔνων</td><td>εὔνων</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="morphology-filters.js"></script>
+</body>
+</html>
